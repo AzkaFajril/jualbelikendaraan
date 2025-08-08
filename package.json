@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cline": "cd fontend && npm run dev",
+    "server": "cd backend && npm run dev",
+    "clinebuild": "cd fontend && npm run build",
+    "start": "concurrently \"npm run server\" \"npm run cline\""
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +18,7 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
+    "concurrently": "^9.2.0",
     "nodemon": "^3.1.10"
   }
 }
