@@ -1,14 +1,10 @@
-[build]
-  # Build command for Vite + React + TypeScript
-  command = "npm run build"
-  # Publish directory (Vite's default output directory)
-  publish = "dist"
+
 
 [build.environment]
   # Node.js version for Netlify
   NODE_VERSION = "18"
 
-# Redirect rules for SPA (Single Page Application)
+# Redirect rules for SPA (Single Page )
 [[redirects]]
   # Handle client-side routing
   from = "/*"
